@@ -1,0 +1,502 @@
+.container-fluid{
+    background-color: lightcoral;
+    position:absolute;
+    top:0%;
+}
+.thanu{
+    color: lightcoral;
+    font-size: 50px;
+}
+
+
+.container-fluid {
+    background-color: lightcoral;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin: 10px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #000;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #ececec;
+    transition: width 0.4s ease;
+}
+
+
+/* Hover effect */
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* Active link underline */
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 25px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 0;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+img{
+    width:200px;
+    height:300px;
+    object-fit: cover;
+    border-radius:100% 0% 100% 100%/90% 100% 100% 100%;
+    box-shadow:0 10px lightcoral ;
+
+}
+.col-6,.col-4{
+    margin-top: 150px;
+    margin-left: 100px;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideinright 3s ease-out forwards;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+@keyframes slideinright {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+h1{
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  display: inline;
+}
+.icon{
+    margin-left: 100px;
+    position: absolute;
+    top:500px;
+    font-size: 40px;
+    transform: translateX(50px);
+    animation: slideinright 2s ease-out forwards;
+    
+}
+@keyframes slideinright {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }            
+
+}
+a{
+    color:black;
+    font-size: 34px;
+}
+.icon a{
+    margin-right: 20px;
+}
+
+.ic1:hover{
+    color:#0a66c2;
+    font-size: 55px;
+}
+.ic2:hover{
+    color:red;
+    font-size: 55px;
+}
+.ic3:hover{
+    color: rgb(62, 47, 47);
+    font-size: 55px;
+}
+/*about.html*/
+.box1{
+    background-color:lavenderblush ;
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow:0 10px 50px;
+    margin-top: 200px;
+    
+    height: 250px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: smoothfadeup 1.2s ease-out forwards;
+}
+
+    
+
+@keyframes smoothfadeup{
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.box2{
+    font-size: 40px;
+    position: absolute;
+    top:150px;
+
+    margin-left:80px;
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+.box3{
+    background-color:;
+    width: 260px;
+    height: 140px;
+    border-radius: 60% 40% 55% 45%/45% 55% 45% 55%;
+    position: absolute;
+    top:100px;
+    margin-left: 70px;
+    box-shadow:0 10px ;
+    
+}
+.box3:hover{
+    color: lightcoral;
+   
+}
+.par{
+    font-size: 20px;
+}
+
+
+/*skills.html*/
+.skill{
+     font-size: 40px;
+    position: absolute;
+    top:130px;
+
+    margin-left:80px;
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    
+}
+.skillline{
+    background-color:;
+    width: 182px;
+    height: 140px;
+    border-radius: 60% 40% 55% 45%/45% 55% 45% 55%;
+    position: absolute;
+    top:70px;
+    margin-left: 70px;
+    box-shadow:0 10px ;
+    
+}
+.skillline:hover{
+    color: lightcoral;
+}
+.name1{
+    margin-left: 20px;
+    
+    
+}
+/*.box4{
+    background-color:aquamarine;
+    width: 300px;
+    height: 300px;
+    margin-left: 200px;
+    position: absolute;
+    top:230px;
+    border-radius: 10px;
+    transform: translatey(50px);
+    animation: slide 1.2s ease forwards;
+    animation-delay: 0s;
+
+}
+@keyframes slide {
+    to{
+        opacity: 1;
+        transform: translatey(0);
+    }    
+    
+}
+.box5{
+    background-color:cadetblue;
+    width: 300px;
+    height: 300px;
+    margin-left: 600px;
+    position: absolute;
+    top:230px;
+    border-radius: 10px;
+    transform: translatey(50px);
+    animation: slideinright 1.2s ease-out forwards;
+    animation-delay: 0.5s;
+}
+@keyframes slideinright {
+    to{
+        opacity: 1;
+        transform: translatey(0);
+    }    
+}
+.box6{
+    background-color:darksalmon;
+    width: 300px;
+    height: 300px;
+    margin-left: 1000px;
+    position: absolute;
+    top:230px;
+    border-radius: 10px;
+    transform: translatey(50px);
+    animation: slideinright 1.2s ease-out forwards;
+    animation-delay: 1s;
+}
+@keyframes slideinright {
+    to{
+        opacity: 1;
+        transform: translatey(0);
+    }    
+
+}*/
+.section-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    margin-top: 250px;
+}
+.card {
+    background-color: var(--card-bg);
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+.bb{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    box-shadow: none;
+    margin-left: 160px;
+
+}
+
+
+.card i {
+    font-size: 45px;
+    color: var(--accent);
+    margin-bottom: 15px;
+    margin-left: 160px;
+}
+
+/* TEXT */
+.card h3 {
+
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:lightcoral;
+}
+
+.card p {
+    font-size: 26px;
+    color:black;
+}
+
+.box{
+    width: 40px;
+    height: 40px;
+
+}
+h2{
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+.box7{
+    background-color:darksalmon;
+    margin-left: 450px;
+    position: absolute;
+    bottom: 10px;
+    
+}
+legend{
+    margin-left: 500px;
+    position: absolute;
+    top:130px;
+}
+.box8{
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+strong{
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+button{
+    background-color: lightcoral;
+    font-size: 30px;
+
+}
+button:hover{
+    color: white;
+}
+.name{
+    color:lightcoral;
+    font-size: 50px;
+    display: inline;
+    margin-left:10px ;
+}
+.name i{
+    font-size: 50px;
+}
+.box99{
+    width: 300px;
+    height: 30px;
+    border-radius:0;
+    object-fit: cover;
+}
+
+@media (max-width:768px){
+    .col-6,.col-4{
+        text-align: center;
+        width: 100%;
+        
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 17px;
+    }
+    .icon{
+        text-align: center;
+    }
+    .profile-image{
+        display: block;
+        width:230px;
+        margin-left: 210px;
+    }
+    
+    
+}
+/*contact*/
+
+.contact-section {
+  width: 500px;
+  margin-top: 200px;
+  margin-left: 500px;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 100px;
+  position: relative;
+  bottom: 100px;
+}
+
+/* Input layout */
+.input-group {
+  margin-bottom: 40px;
+}
+
+.input-group span {
+  display: block;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Line-style inputs */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
+  padding: 8px 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+  background-color: #000;
+}
+.contact{
+    
+    width: 260px;
+    height: 140px;
+    border-radius: 60% 40% 55% 45%/45% 55% 45% 55%;
+    position: absolute;
+    top:55px;
+    margin-left: 497px;
+    box-shadow:0 10px  ;
+}
+.contact:hover{
+    color: lightcoral;
+}
